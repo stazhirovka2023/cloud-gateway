@@ -8,6 +8,9 @@
 ### Spring Cloud Gateway Routes
 В поле `spring.cloud.gateway.routes` описаны маршруты в шлюзе.
 
+В данном проекте уже настроен один маршрут:
+-  `client-service`  - маршрут на клиентский сервис
+
 Маршрут `resources` перенаправляет запросы, соответствующие предикату `Path=/message/**` на урл `http://127.0.0.1:8090/message`.
 
 Маршрут `client-backend` перенаправляет запросы, соответствующие предикату `Path=/resource/**` на урл `http://127.0.0.1:8090/resource`. 
